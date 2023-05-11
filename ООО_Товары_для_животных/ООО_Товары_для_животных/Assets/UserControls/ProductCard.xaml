@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="ООО_Товары_для_животных.Assets.UserControls.ProductCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ООО_Товары_для_животных.Assets.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="250" d:DesignWidth="1300" FontFamily="Comic Sans MS" FontSize="20">
+    <Grid Height="250" Width="1300">
+        <Grid Height="250" Width="1300" Background="Black">
+            <Grid Height="240" Width="1290" Background="White">
+                <Label x:Name="SaleColor" Background="Green" Visibility="Hidden"/>
+                <StackPanel Orientation="Horizontal">
+                    <Label/>
+                    <Grid Height="220" Width="300" Background="Black">
+                        <Grid Height="210" Width="290" Background="White">
+                            <Image x:Name="Images" Source="/Assets/Images/picture.png"/>
+                        </Grid>
+                    </Grid>
+                    <Label/>
+                    <Grid Height="220" Width="700" Background="Black">
+                        <Grid Height="210" Width="690" Background="White">
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock x:Name="Title" FontWeight="Bold">Название</TextBlock>
+                                <Label/>
+                                <TextBlock x:Name="Description" Height="50">Описание</TextBlock>
+                                <Label/>
+                                <TextBlock x:Name="Manufacturer" >Производитель</TextBlock>
+                                <Label/>
+                                <Label/>
+                                <Label/>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock>Цена</TextBlock>
+                                    <TextBlock x:Name="Costt"/>
+                                    <TextBlock x:Name="CostDiscount"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                    <Label/>
+                    <Grid Height="200" Width="200" Background="Black">
+                        <Grid Height="190" Width="190" Background="White" x:Name="BackgroundSale">
+                            <TextBlock HorizontalAlignment="Center">Размер скидки в %</TextBlock>
+                            <TextBlock x:Name="DiscountAmount" Height="40"/>
+                        </Grid>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+            <TextBlock x:Name="Strike" TextDecorations="Strikethrough" Width="0"/>
+        </Grid>
+    </Grid>
+</UserControl>
